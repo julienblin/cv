@@ -1,0 +1,20 @@
+!!! XML
+!!!
+%html{:xmlns => 'http://www.w3.org/1999/xhtml', 'xml:lang' => 'fr', :lang => 'fr'}
+  %head
+    %link{:rel => 'stylesheet', :href => 'cvstyle.css', :type => 'text/css'}
+    %title== #{cv.contact.name} - Curriculum Vitae
+
+  %body
+    .hresume
+      #contactinfo.vcard.section
+        %h1.fn= cv.contact.name
+        %h2= cv.title
+        %h3.subtitle== Contact
+
+        .incontent
+          %a.email{:href => "mailto:#{cv.contact.email}"}= cv.contact.email
+          %br
+          %a.url{:href => cv.contact.website}= cv.contact.website
+          %br
+          %a.value{:href => "tel:#{cv.contact.phone}"}= cv.contact.phone
