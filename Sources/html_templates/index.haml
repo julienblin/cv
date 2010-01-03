@@ -2,19 +2,65 @@
 !!!
 %html{:xmlns => 'http://www.w3.org/1999/xhtml', 'xml:lang' => 'fr', :lang => 'fr'}
   %head
+    %meta{'http-equiv' => 'Content-Type', :content => 'text/xhtml; charset=ISO-8859-1'}
     %link{:rel => 'stylesheet', :href => 'cvstyle.css', :type => 'text/css'}
-    %title== #{cv.contact.name} - Curriculum Vitae
+    %title== #{cv.name} - Curriculum Vitae
 
   %body
     .hresume
       #contactinfo.vcard.section
-        %h1.fn= cv.contact.name
+        %h1.fn= cv.name
         %h2= cv.title
         %h3.subtitle== Contact
 
         .incontent
+          .adr
+            %span.street-address= cv.contact.address.street
+            %br
+            %span.locality== #{cv.contact.address.locality},
+            %span.region= cv.contact.address.region
+            %span.postal-code= cv.contact.address.zipcode
+            %br
+            %span.country-name= cv.contact.address.country
           %a.email{:href => "mailto:#{cv.contact.email}"}= cv.contact.email
           %br
           %a.url{:href => cv.contact.website}= cv.contact.website
           %br
           %a.value{:href => "tel:#{cv.contact.phone}"}= cv.contact.phone
+      
+      #objective.section
+        %h3.subtitle== Objectifs
+        .summary.incontent
+          %p= cv.objective
+      
+      #experience.vcalendar.section
+        %h3.subtitle== Expérience
+        
+        - cv.experiences.each do |exp|
+          
+          .experience.vevent.incontent
+            %h3.location= exp.location
+            
+            %abbr.dtstart{:title => exp.date.start}= exp.date.start
+            \- 
+            - if exp.date.end
+              %abbr.dtend{:title => exp.date.end}= exp.date.end
+            - else
+              Aujourd'hui
+            
+            %p.summary= exp.summary
+            
+            - if exp.tasks
+              %ul
+                - exp.tasks.each do |task|
+                  %li
+                    %span= task
+       
+        #skills.section
+          %h3.subtitle== Compétences
+         
+          .incontent
+            %ul.multilist
+              - cv.skills.each do |skill|
+                %li.skill
+                  %span= skill

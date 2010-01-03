@@ -1,7 +1,40 @@
 cv:
-  title  : Architecte logiciel
+  name    : Julien Blin
+  title   : Architecte logiciel
   contact :
-    name    : Julien Blin
+    address :
+      street   : 723 rue Sutherland
+      locality : Québec
+      region   : QC
+      zipcode  : G1R 2Z1
+      country  : Canada
     email   : julien.blin@gmail.com
     website : http://blog.jblin.com
     phone   : +1 (418) 558-5165
+  
+  objective :
+    Etre en mesure de faire des trucs cools
+  
+  experiences :
+
+    - location : Cirque du Soleil (CGI)
+      date     :
+        start : 2009-06-02
+      summary  : Architecte logiciel pour l'impartition du Cirque du Soleil
+      tasks    :
+        - Blah balah 1
+        - Blah balah 2
+
+    - location : Paris Re (LogicaCMG)
+      date     :
+        start : 2006-01-03
+        end   : 2007-02-03
+      summary  : Architecte logiciel pour l'impartition du Cirque du Soleil
+      tasks    :
+        - Blah balah 3
+        - Blah balah 4
+
+  skills :
+    - .Net
+    - Ruby on Rails
+    - Objective-C (iPhone)
