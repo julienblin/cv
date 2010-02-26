@@ -8,6 +8,12 @@
 
   %body
     .hresume
+      #actions
+        %ul
+          - other_langs.each do |other_lang|
+            %li.alternate_lang
+              %a{:href => "index.#{other_lang}.html"}= other_lang
+    
       #contactinfo.vcard.section
         %h1.fn= cv.name
         %h2= cv.title.send(lang)

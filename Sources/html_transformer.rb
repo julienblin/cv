@@ -14,10 +14,10 @@ class HtmlTransformer < BaseTransformer
 		
 		template = File.read('Sources/html_templates/index.haml')
 		haml_engine = Haml::Engine.new(template)
-		
-		[:en, :fr].each do |lang|
+		langs = [:en, :fr]
+		langs.each do |lang|
 		  resources = YamlParser.new('Data/resources.yml').read.resources.send(lang)
-		  output = haml_engine.render(Object.new, :cv => @data, :lang => lang, :resources => resources)
+		  output = haml_engine.render(Object.new, :cv => @data, :lang => lang, :other_langs => langs.select {|l| l != lang}, :resources => resources)
   		File.open(@output_dir + "/index.#{lang}.html", 'w') do |f|
   			f.write(output)
   		end
