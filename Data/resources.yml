@@ -1,0 +1,15 @@
+resources:
+    en:
+        cv: Curriculum Vitae
+        date_formatting: %m/%d/%Y
+        experiences: Experiences
+        objectives: Objectives
+        skills: Skills
+        today: Today
+    fr:
+        cv: Curriculum Vitae
+        date_formatting: %Y-%m-%d
+        experiences: Expériences
+        objectives: Objectifs
+        skills: Compétences
+        today : Aujourd'hui

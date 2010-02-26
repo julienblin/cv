@@ -2,15 +2,15 @@
 !!!
 %html{:xmlns => 'http://www.w3.org/1999/xhtml', 'xml:lang' => 'fr', :lang => 'fr'}
   %head
-    %meta{'http-equiv' => 'Content-Type', :content => 'text/xhtml; charset=ISO-8859-1'}
+    %meta{'http-equiv' => 'Content-Type', :content => 'text/xhtml; charset=utf-8'}
     %link{:rel => 'stylesheet', :href => 'cvstyle.css', :type => 'text/css'}
-    %title== #{cv.name} - Curriculum Vitae
+    %title== #{cv.name} - #{resources.cv}
 
   %body
     .hresume
       #contactinfo.vcard.section
         %h1.fn= cv.name
-        %h2= cv.title
+        %h2= cv.title.send(lang)
         %h3.subtitle== Contact
 
         .incontent
@@ -29,26 +29,26 @@
           %a.value{:href => "tel:#{cv.contact.phone}"}= cv.contact.phone
       
       #objective.section
-        %h3.subtitle== Objectifs
+        %h3.subtitle= resources.objectives
         .summary.incontent
-          %p= cv.objective
+          %p= cv.objective.send(lang)
       
       #experience.vcalendar.section
-        %h3.subtitle== Expérience
+        %h3.subtitle= resources.experiences
         
         - cv.experiences.each do |exp|
           
           .experience.vevent.incontent
             %h3.location= exp.location
             
-            %abbr.dtstart{:title => exp.date.start}= exp.date.start
+            %abbr.dtstart{:title => exp.date.start.strftime(resources.date_formatting)}= exp.date.start.strftime(resources.date_formatting)
             \- 
             - if exp.date.end
-              %abbr.dtend{:title => exp.date.end}= exp.date.end
+              %abbr.dtend{:title => exp.date.end.strftime(resources.date_formatting)}= exp.date.end.strftime(resources.date_formatting)
             - else
-              Aujourd'hui
+              = resources.today
             
-            %p.summary= exp.summary
+            %p.summary= exp.summary.send(lang)
             
             - if exp.tasks
               %ul
@@ -56,11 +56,11 @@
                   %li
                     %span= task
        
-        #skills.section
-          %h3.subtitle== Compétences
-         
-          .incontent
-            %ul.multilist
-              - cv.skills.each do |skill|
-                %li.skill
-                  %span= skill
+      #skills.section
+        %h3.subtitle= resources.skills
+       
+        .incontent
+          %ul.multilist
+            - cv.skills.each do |skill|
+              %li.skill
+                %span= skill
