@@ -28,13 +28,18 @@
           %br
           %a.value{:href => "tel:#{cv.contact.phone}"}= cv.contact.phone
       
-      #objective.section
-        %h3.subtitle= resources.objectives
+      #summary.section
+        %h3.subtitle= resources.summary
         .summary.incontent
           %p= cv.objective.send(lang)
       
+      #objective.section
+        %h3.subtitle= resources.objective
+        .objective.incontent
+          %p= cv.objective.send(lang)
+      
       #experience.vcalendar.section
-        %h3.subtitle= resources.experiences
+        %h3.subtitle= resources.experience
         
         - cv.experiences.each do |exp|
           
@@ -64,3 +69,8 @@
             - cv.skills.each do |skill|
               %li.skill
                 %span= skill
+      
+      #interests.section
+        %h3.subtitle= resources.interests
+        
+        .incontent

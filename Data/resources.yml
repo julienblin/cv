@@ -2,14 +2,18 @@ resources:
     en:
         cv: Curriculum Vitae
         date_formatting: %m/%d/%Y
-        experiences: Experiences
-        objectives: Objectives
+        experience: Experience
+        interests: Additional Interests
+        objective: Objective
         skills: Skills
+        summary : Summary
         today: Today
     fr:
         cv: Curriculum Vitae
         date_formatting: %Y-%m-%d
-        experiences: Expériences
-        objectives: Objectifs
+        experience: Expérience
+        interests: Autres intérêts
+        objective: Objectif
         skills: Compétences
+        summary : En bref
         today : Aujourd'hui
