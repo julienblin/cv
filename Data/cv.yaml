@@ -1,8 +1,8 @@
 cv:
   name    : Julien Blin
   title   : 
-      en : Software architect
-      fr : Architecte logiciel
+    en : Software architect
+    fr : Architecte logiciel
   contact :
     address :
       street   : 723 rue Sutherland
@@ -15,12 +15,12 @@ cv:
     phone   : +1 (418) 558-5165
   
   summary :
-      en : cool stuffs
-      fr : Etre en mesure de faire des trucs cools
+    en : cool stuffs
+    fr : Etre en mesure de faire des trucs cools
   
   objective :
-      en : cool stuffs
-      fr : Etre en mesure de faire des trucs cools
+    en : cool stuffs
+    fr : Etre en mesure de faire des trucs cools
   
   experiences :
 
@@ -28,22 +28,30 @@ cv:
       date     :
         start : 2009-06-02
       summary  : 
-          en : Software architect
-          fr : Architecte logiciel pour l'impartition du Cirque du Soleil
+        en : Software architect
+        fr : Architecte logiciel pour l'impartition du Cirque du Soleil
       tasks    :
-        - Blah balah 1
-        - Blah balah 2
+        en :
+          - Blah balah en 1
+          - Blah balah en 2
+        fr :
+          - Blah balah fr 1
+          - Blah balah fr 2
 
     - location : Paris Re (LogicaCMG)
       date     :
         start : 2006-01-03
         end   : 2007-02-03
       summary  :
-          en : Architecte logiciel asfas
-          fr : Architecte logiciel pour l'impartition du Cirque du Soleil
+        en : Architecte logiciel asfas
+        fr : Architecte logiciel pour l'impartition du Cirque du Soleil
       tasks    :
-        - Blah balah 3
-        - Blah balah 4
+        en :
+          - Blah balah en 1
+          - Blah balah en 2
+        fr :
+          - Blah balah fr 1
+          - Blah balah fr 2
 
   skills :
     - .Net

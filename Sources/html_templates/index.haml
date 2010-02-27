@@ -63,7 +63,7 @@
             
             - if exp.tasks
               %ul
-                - exp.tasks.each do |task|
+                - exp.tasks.send(lang).each do |task|
                   %li
                     %span= task
        
