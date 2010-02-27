@@ -31,4 +31,7 @@ p { margin:0; padding:0; }
   margin-bottom: 10px;
 }
 
-#actions { margin: 0; padding: 0 0.15in 0 0.15in; clear:both; }
+#contactinfo { padding: 0.05in 0 0.15in 0; }
+#actions { float: right; }
+#actions li { list-style: none; }
+#actions a { text-decoration: underline; }
