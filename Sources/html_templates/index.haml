@@ -37,7 +37,7 @@
       #summary.section
         %h3.subtitle= resources.summary
         .summary.incontent
-          %p= cv.objective.send(lang)
+          %p= cv.summary.send(lang).lines_to_br
       
       #objective.section
         %h3.subtitle= resources.objective

@@ -1,6 +1,7 @@
 
 require 'haml'
 require 'Sources/base_transformer'
+require 'Sources/string_additions'
 
 class HtmlTransformer < BaseTransformer
 
