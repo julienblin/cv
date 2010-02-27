@@ -4,8 +4,10 @@ require 'directory_watcher' if Gem.available?('directory_watcher')
 
 require 'Sources/yaml_parser'
 require 'Sources/html_transformer'
+require 'net/ftp'
 
-data_file = 'Data/cv.yaml'
+data_file = 'Data/cv.yml'
+credentials_file = 'Data/credentials.yml'
 output_base_dir = 'Output'
 
 namespace :gems do
@@ -40,6 +42,25 @@ task :watch do
 	dw.start
 	$stdin.gets
 	dw.stop
+end
+
+desc "Upload html output to ftp account."
+task :upload_html do
+  credentials = YamlParser.new(credentials_file).read.credentials
+  puts "Connecting to #{credentials.username}@#{credentials.server}..."
+  ftp = Net::FTP.new
+  ftp.connect(credentials.server, 21)
+  if(ftp.login(credentials.username, credentials.password))
+    puts "Connected. Moving to #{credentials.path}..."
+    ftp.chdir(credentials.path)
+    Dir.glob("#{output_base_dir}/html/*.*").each do |file|
+      puts "Sending #{file}..."
+      ftp.puttextfile(file)
+    end
+    puts "Done."
+  else
+    puts "Connection error"
+  end
 end
 
 task :default => [:generate_static_html]
