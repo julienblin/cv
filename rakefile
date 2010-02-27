@@ -53,9 +53,11 @@ task :upload_html do
   if(ftp.login(credentials.username, credentials.password))
     puts "Connected. Moving to #{credentials.path}..."
     ftp.chdir(credentials.path)
-    Dir.glob("#{output_base_dir}/html/*.*").each do |file|
-      puts "Sending #{file}..."
-      ftp.puttextfile(file)
+    Dir.glob("#{output_base_dir}/html/*", File::FNM_DOTMATCH).each do |file|
+      if ((file != "#{output_base_dir}/html/.") and (file != "#{output_base_dir}/html/.."))
+        puts "Sending #{file}..."
+        ftp.puttextfile(file)
+      end
     end
     puts "Done."
   else
