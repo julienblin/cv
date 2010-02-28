@@ -80,6 +80,13 @@
         %h3.subtitle= resources.interests
         
         .incontent
+          %ul
+            - cv.interests.each do |interest|
+              %li
+                - if interest.is_a? OpenStruct
+                  %span= interest.send(lang)
+                - else
+                  %span= interest
 
       #tool.section
         = resources.custom_tool 

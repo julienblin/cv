@@ -184,3 +184,14 @@ cv:
     - Windows
     - "Linux (<a href='http://www.ubuntu.com/'>Ubuntu</a>, <a href='http://centos.org/'>CentOS</a>)"
     - Mac OS X
+  
+  interests :
+    -
+      en :
+      fr : "<a href='http://www.mondecafes.com'>MondeCafés</a> - Associé, responsable de la conception et réalisation de le future version ainsi que de l'application iPhone."
+    -
+      en :
+      fr : "Musicien amateur (piano, guitare)"
+    -
+      en :
+      fr : "Voyageur"
