@@ -54,7 +54,9 @@
             - else
               = resources.today
             
-            %p.summary= exp.summary.send(lang)
+            %p.summary
+              - if exp.summary.send(lang)
+                = exp.summary.send(lang).lines_to_br
             
             - if exp.tasks and exp.tasks.send(lang)
               %ul

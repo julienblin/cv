@@ -22,7 +22,7 @@ p { margin:0; padding:0; }
 
 .experience + .experience { margin-top: 0.2in; }
 .location { font-weight: bold; }
-.experience .summary { margin:4pt 0 4pt 0.2in; }
+.experience .summary { margin:4pt 0 8pt 0.2in; }
 
 .multilist { margin:0;  }
   .multilist li { list-style-type:none; float:left; width: 1.66in; padding:2pt; margin:0; }

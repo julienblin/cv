@@ -21,26 +21,40 @@ cv:
       "5 années d'expérience en tant qu'architecte au sein de sociétés de consultation internationales
       (<a href='http://www.logica.fr/'>Logica</a> et <a href='http://www.cgi.com/'>CGI</a>).
       
+      
       Dynamique, pragmatique, excellentes relations clientèles, digne de confiance.
       
       Aptitudes au leaderhip, expérience de management d'équipes.
       
       À l'aise avec le travail en environnement anglophone.
       
+      
       Possède une approche holistique de la conception des systèmes, et touche à l'ensemble de la réalisation d'un projet,
-      de la phase de conception fonctionnelle jusqu'à la maintenance évolutive et le support."
+      de la phase de conception fonctionnelle jusqu'à la maintenance évolutive et le support, en passant par la conception, la réalisation ainsi que les tests."
   
   experiences :
 
+    - location : "<a href='http://www.cspq.gouv.qc.ca'>Centre de services partagés du Québec</a> (CGI)"
+      date     :
+        start : 2001-01-25
+      summary  : 
+        en : 
+        fr : 
+      tasks    :
+        en :
+        fr :
+
     - location : "<a href='http://www.cirquedusoleil.com'>Cirque du Soleil</a> (CGI)"
       date     :
-        start : 2008-06-02
-        end : 2009-12-31
+        start : 2008-06-04
+        end : 2010-01-20
       summary  : 
         en : 
         fr : 
           "Architecte logiciel pour une équipe d'une vingtaine de personnes chargée de la maintenance et des évolutions
-          du parc applicatif du Cirque du Soleil (~ 150 applications)."
+          du parc applicatif du Cirque du Soleil (~ 150 applications).
+          
+          Contrat d'impartition de 10 ans et 40 000 j.p."
       tasks    :
         en :
         fr :
@@ -48,6 +62,99 @@ cv:
           - Réorganisation de la méthodologie de travail sur les évolutions
           - "Gestion des environnements (développement, test, production, etc.)"
           - Mise en place de mécanismes de graduation automatisés
+          - "Environnement technologique Microsoft : .Net, COM+, SqlServer, Windows, Biztalk, MOSS"
+          
+    - location : "<a href='http://www.axa.fr'>AXA France</a> (Logica)"
+      date     :
+        start : 2008-01-01
+        end : 2008-04-30
+      summary  : 
+        en : 
+        fr : 
+          "Architecte logiciel responsable de la conception d’un extranet à destination du réseau des distributeurs en assurance-vie.
+          
+          Création d'une interface web 24/7 se connectant au central MVS de gestion des contrats. Prise en compte de besoins d'accessibilité mobile.
+          
+          Projet estimé lors de la phase de démarrage à 1 500 j.p."
+      tasks    :
+        en :
+        fr :
+          - Participation à l'évaluation du niveau de complexité de l'application
+          - Entière responsabilité des activités de démarrage du projet
+          - Élaboration d'un plan de travail pour la réalisation du projet et obtention de son approbation auprès des représentants désignés par le client
+          - "Environnement technologique hybride ASP.NET / IBM MVS"
+          - "Projet pilote dans la mise en place d'une méthodologie agile en environnement CMMI niveau 2"
+          
+    - location : "<a href='http://www.partnerre.com'>Paris Re</a> (Logica)"
+      date     :
+        start : 2006-09-01
+        end : 2007-12-31
+      summary  : 
+        en : 
+        fr : 
+          "Architecte logiciel - Réécriture de 4 applications de gestion en client riche de VB5 (plus d'un million de lignes de code) vers C#/.Net 2.0.
+          
+          Ces 4 applications se connectent sur un back-end BEA Tuxedo et partagent un ensemble de fonctionnalités communes.
+          
+          Équipe de 15 personnes et 4000 j.p."
+      tasks    :
+        en :
+        fr :
+          - Réalisation de l'architecture du système et des applications en collaboration et sous la validation des architectes organiques du client
+          - "Participation, en collaboration avec le chargé de projet, à la constitution de l'équipe"
+          - Soutien au développement auprès de l'équipe et formation continue
+          - Rédaction des normes et préconisations applicables au projet
+          - Développement d'outils d'analyse de code Visual Basic et de migration semi-automatique
+          - "Définition de l'environnement de travail des développeurs, en réunissant les normes et les outils au travers d'un workflow cohérent"
+          
+    - location : "<a href='http://www.axa.fr'>AXA France</a> (Logica)"
+      date     :
+        start : 2005-09-01
+        end : 2006-08-31
+      summary  : 
+        en : 
+        fr : 
+          "Architecte logiciel et chargé de projet - Réalisation du site <a href='http://epargneentreprise.axa.fr'>http://epargneentreprise.axa.fr</a>.
+          
+          Mandat de 400 j.p. (3 personnes) pour la conception et la réalisation du site au sein d'un très gros projet global (plus de 50 000 j.p.)"
+      tasks    :
+        en :
+        fr :
+          - "Architecte, développeur, chargé de projet"
+          - Coordination de la planification du projet avec celles des autres projets déjà en cours chez le client
+          - Participation aux négociations des ententes avec les partenaires
+          - Production du tableau de bord de gestion
+          - Transfert d’expertise aux utilisateurs concernant les fonctionnalités avancées
+          - "Environnement technologique hybride ASP.NET / IBM MVS / <a href='http://www.interwoven.com/components/pagenext.jsp?topic=PRODUCT::TEAMSITE'>Interwoven TeamSite</a>"
+          
+    - location : "<a href='http://www.europ-assistance.com'>Europe Assistance Groupe</a> (Logica)"
+      date     :
+        start : 2005-02-01
+        end : 2005-08-31
+      summary  : 
+        en : 
+        fr : 
+          "Chargé d'équipe sur un projet de tests fonctionnels lors de la refonte de l'application principale de gestion.
+          
+          6 personnes sur un an pour un projet de 2 000 j.p."
+        
+    - location : "<a href='http://www.saur.com'>SAUR France</a>"
+      date     :
+        start : 2004-07-01
+        end : 2004-12-31
+      summary  : 
+        en : 
+        fr : 
+          "Développeur d'une application interne de gestion des demandes (~ 200 j.p.)."
+          
+    - location : "<a href='http://www.insee.fr'>Institut National de la Statistique et des Études Économiques</a>"
+      date     :
+        start : 2001-04-02
+        end : 2001-06-30
+      summary  : 
+        en : 
+        fr : 
+          "Développeur d'une application interne de traitement des mises à jour du fichier électoral (~ 100 j.p.)."
 
   skills :
     - 
