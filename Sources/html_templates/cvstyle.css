@@ -31,6 +31,8 @@ p { margin:0; padding:0; }
   margin-bottom: 10px;
 }
 
+.incontent a { border-bottom: 1px dotted rgb(102, 102, 102); }
+
 #contactinfo { padding: 0.05in 0.15in 0.15in 0.15in; }
 #actions { float: right; padding-right: 0.15in;}
 #actions li { list-style: none; }

@@ -17,11 +17,12 @@ cv:
   summary :
     en : cool stuffs
     fr : 
-      "5 années d'expérience en tant qu'architecte au sein de sociétés de consultation internationales (Logica et CGI).
+      "5 années d'expérience en tant qu'architecte au sein de sociétés de consultation internationales
+      (<a href='http://www.logica.fr/'>Logica</a> et <a href='http://www.cgi.com/'>CGI</a>).
       
       Dynamique, pragmatique, excellentes relations clientèles, digne de confiance.
       
-      Aptitudes au leaderhip, expérience de management d'équipes. À l'aise avec le travail en équipe."
+      Aptitudes au leaderhip, expérience de management d'équipes. À l'aise avec le travail en environnement anglophone."
   
   objective :
     en : cool stuffs
@@ -59,6 +60,30 @@ cv:
           - Blah balah fr 2
 
   skills :
-    - ".Net (ASP.NET, Winforms)"
-    - Ruby on Rails
-    - Objective-C (iPhone)
+    - 
+      en : Software architecture
+      fr : Architecture logicielle
+    - 
+      en : Performance
+      fr : Performance
+    - 
+      en : Security
+      fr : Sécurité
+    - ".Net (C#)"
+    - "<a href='http://rubyonrails.org/'>Ruby on Rails</a>"
+    - "Objective-C (iPhone)"
+    - HTML
+    - CSS
+    - Ajax
+    - "SqlServer (2k, 2k8)"
+    - MySQL
+    - Oracle
+    - "<a href='http://git-scm.com/'>Git</a>"
+    - "<a href='http://subversion.apache.org/'>Subversion</a>"
+    - "<a href='http://www.microsoft.com/visualstudio/en-us/products/teamsystem/default.mspx'>TFS</a>"
+    - "<a href='http://www.microsoft.com/windowsserver2008/en/us/internet-information-services.aspx'>IIS</a>"
+    - "<a href='http://httpd.apache.org/'>Apache</a>, <a href='http://wiki.nginx.org/Main'>NGinx</a>"
+    - "<a href='http://memcached.org/'>Memcached</a>"
+    - Windows
+    - "Linux (<a href='http://www.ubuntu.com/'>Ubuntu</a>, <a href='http://centos.org/'>CentOS</a>)"
+    - Mac OS X

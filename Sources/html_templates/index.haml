@@ -74,7 +74,10 @@
           %ul.multilist
             - cv.skills.each do |skill|
               %li.skill
-                %span= skill
+                - if skill.is_a? OpenStruct
+                  %span= skill.send(lang)
+                - else
+                  %span= skill
       
       #interests.section
         %h3.subtitle= resources.interests
