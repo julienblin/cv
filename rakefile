@@ -1,6 +1,5 @@
 
 require 'pp'
-require 'directory_watcher' if Gem.available?('directory_watcher')
 
 require 'Sources/yaml_parser'
 require 'Sources/html_transformer'
@@ -15,7 +14,6 @@ namespace :gems do
 	desc "Install the required gem dependencies"
 	task :install do
 		`gem install haml` unless Gem.available?('haml')
-		`gem install directory_watcher` unless Gem.available?('directory_watcher')
 	end
 
 end
@@ -31,17 +29,6 @@ task :generate_static_html do
 	parser = YamlParser.new(data_file)
 	transformer = HtmlTransformer.new(parser.read.cv, output_base_dir + '/html')
 	transformer.transform
-end
-
-desc "Watch the directory for file changes and relaunch generation"
-task :watch do
-	dw = DirectoryWatcher.new 'Data', :glob => '**/*'
-	
-	dw.add_observer {|*args| args.each {|event| puts event}}
-	
-	dw.start
-	$stdin.gets
-	dw.stop
 end
 
 desc "Upload html output to ftp account."

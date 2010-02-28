@@ -17,11 +17,11 @@ cv:
   summary :
     en : cool stuffs
     fr : 
-      5 années d'expérience en tant qu'architecte au sein de sociétés de consultation internationales (Logica et CGI).
+      "5 années d'expérience en tant qu'architecte au sein de sociétés de consultation internationales (Logica et CGI).
       
-      Dynamique, pragmatique, excellentes relations clientèle, digne de confiance.
+      Dynamique, pragmatique, excellentes relations clientèles, digne de confiance.
       
-      Aptitudes au leadership, expérience de management d’équipes. À l'aise avec le travail en environnement anglophone.
+      Aptitudes au leaderhip, expérience de management d'équipes. À l'aise avec le travail en équipe."
   
   objective :
     en : cool stuffs
@@ -59,6 +59,6 @@ cv:
           - Blah balah fr 2
 
   skills :
-    - .Net
+    - ".Net (ASP.NET, Winforms)"
     - Ruby on Rails
     - Objective-C (iPhone)
