@@ -39,11 +39,6 @@
         .summary.incontent
           %p= cv.summary.send(lang).lines_to_br
       
-      #objective.section
-        %h3.subtitle= resources.objective
-        .objective.incontent
-          %p= cv.objective.send(lang)
-      
       #experience.vcalendar.section
         %h3.subtitle= resources.experience
         
@@ -61,7 +56,7 @@
             
             %p.summary= exp.summary.send(lang)
             
-            - if exp.tasks
+            - if exp.tasks and exp.tasks.send(lang)
               %ul
                 - exp.tasks.send(lang).each do |task|
                   %li

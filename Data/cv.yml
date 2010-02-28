@@ -15,49 +15,39 @@ cv:
     phone   : +1 (418) 558-5165
   
   summary :
-    en : cool stuffs
+    en : 
+      ""
     fr : 
       "5 années d'expérience en tant qu'architecte au sein de sociétés de consultation internationales
       (<a href='http://www.logica.fr/'>Logica</a> et <a href='http://www.cgi.com/'>CGI</a>).
       
       Dynamique, pragmatique, excellentes relations clientèles, digne de confiance.
       
-      Aptitudes au leaderhip, expérience de management d'équipes. À l'aise avec le travail en environnement anglophone."
-  
-  objective :
-    en : cool stuffs
-    fr : Etre en mesure de faire des trucs cools
+      Aptitudes au leaderhip, expérience de management d'équipes.
+      
+      À l'aise avec le travail en environnement anglophone.
+      
+      Possède une approche holistique de la conception des systèmes, et touche à l'ensemble de la réalisation d'un projet,
+      de la phase de conception fonctionnelle jusqu'à la maintenance évolutive et le support."
   
   experiences :
 
-    - location : Cirque du Soleil (CGI)
+    - location : "<a href='http://www.cirquedusoleil.com'>Cirque du Soleil</a> (CGI)"
       date     :
-        start : 2009-06-02
+        start : 2008-06-02
+        end : 2009-12-31
       summary  : 
-        en : Software architect
-        fr : Architecte logiciel pour l'impartition du Cirque du Soleil
+        en : 
+        fr : 
+          "Architecte logiciel pour une équipe d'une vingtaine de personnes chargée de la maintenance et des évolutions
+          du parc applicatif du Cirque du Soleil (~ 150 applications)."
       tasks    :
         en :
-          - Blah balah en 1
-          - Blah balah en 2
         fr :
-          - Blah balah fr 1
-          - Blah balah fr 2
-
-    - location : Paris Re (LogicaCMG)
-      date     :
-        start : 2006-01-03
-        end   : 2007-02-03
-      summary  :
-        en : Architecte logiciel asfas
-        fr : Architecte logiciel pour l'impartition du Cirque du Soleil
-      tasks    :
-        en :
-          - Blah balah en 1
-          - Blah balah en 2
-        fr :
-          - Blah balah fr 1
-          - Blah balah fr 2
+          - Industrialisation du processus de maintenance applicative sur les applications critiques
+          - Réorganisation de la méthodologie de travail sur les évolutions
+          - "Gestion des environnements (développement, test, production, etc.)"
+          - Mise en place de mécanismes de graduation automatisés
 
   skills :
     - 

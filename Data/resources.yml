@@ -5,7 +5,6 @@ resources:
     date_formatting: %m/%d/%Y
     experience: Experience
     interests: Additional Interests
-    objective: Objective
     skills: Skills
     summary : Summary
     today: Today
@@ -15,7 +14,6 @@ resources:
     date_formatting: %Y-%m-%d
     experience: Expérience
     interests: Autres intérêts
-    objective: Objectif
     skills: Compétences
     summary : En bref
     today : Aujourd'hui
