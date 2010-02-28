@@ -116,16 +116,9 @@ cv:
         fr : 
           "Architecte logiciel et chargé de projet - Réalisation du site <a href='http://epargneentreprise.axa.fr'>http://epargneentreprise.axa.fr</a>.
           
-          Mandat de 400 j.p. (3 personnes) pour la conception et la réalisation du site au sein d'un très gros projet global (plus de 50 000 j.p.)"
-      tasks    :
-        en :
-        fr :
-          - "Architecte, développeur, chargé de projet"
-          - Coordination de la planification du projet avec celles des autres projets déjà en cours chez le client
-          - Participation aux négociations des ententes avec les partenaires
-          - Production du tableau de bord de gestion
-          - Transfert d’expertise aux utilisateurs concernant les fonctionnalités avancées
-          - "Environnement technologique hybride ASP.NET / IBM MVS / <a href='http://www.interwoven.com/components/pagenext.jsp?topic=PRODUCT::TEAMSITE'>Interwoven TeamSite</a>"
+          Mandat de 400 j.p. (3 personnes) pour la conception et la réalisation du site au sein d'un très gros projet global (plus de 50 000 j.p.)
+          
+          Site en gestion de contenu (<a href='http://www.interwoven.com/components/pagenext.jsp?topic=PRODUCT::TEAMSITE'>TeamSite</a>) et transactionnel - SOA."
           
     - location : "<a href='http://www.europ-assistance.com'>Europe Assistance Groupe</a> (Logica)"
       date     :
