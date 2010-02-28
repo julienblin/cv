@@ -53,7 +53,7 @@ cv:
       tasks    :
         en :
         fr :
-          - "Rédcation de dossier de positionnement pour les besoins de développement internes"
+          - "Rédaction de dossiers de positionnement pour les besoins de développement internes"
           - "Validation des propositions d'architecture logicielle des clients en fonction des critères de performance, de sécurité et de bonnes pratiques générales"
 
     - location : "<a href='http://www.cirquedusoleil.com'>Cirque du Soleil</a> (CGI)"
