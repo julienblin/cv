@@ -5,9 +5,10 @@ require 'Sources/string_additions'
 
 class HtmlTransformer < BaseTransformer
 
-	def initialize(data, output_dir)
+	def initialize(data, output_dir, credentials)
 		@data = data
 		@output_dir = output_dir
+		@credentials = credentials
 	end
 
 	def transform
@@ -18,7 +19,7 @@ class HtmlTransformer < BaseTransformer
 		langs = [:en, :fr]
 		langs.each do |lang|
 		  resources = YamlParser.new('Data/resources.yml').read.resources.send(lang)
-		  output = haml_engine.render(Object.new, :cv => @data, :lang => lang, :other_langs => langs.select {|l| l != lang}, :resources => resources)
+		  output = haml_engine.render(Object.new, :cv => @data, :credentials => @credentials, :lang => lang, :other_langs => langs.select {|l| l != lang}, :resources => resources)
   		File.open(@output_dir + "/index.#{lang}.html", 'w') do |f|
   			f.write(output)
   		end

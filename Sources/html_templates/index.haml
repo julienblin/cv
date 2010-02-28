@@ -92,4 +92,14 @@
                   %span= interest
 
       #tool.section
-        = resources.custom_tool 
+        = resources.custom_tool
+    
+    - if credentials and credentials.google_analytics_tracker
+      %script{:type => 'text/javascript'}
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+      %script{:type => 'text/javascript'}
+        try {
+        == var pageTracker = _gat._getTracker('#{credentials.google_analytics_tracker}');
+        pageTracker._trackPageview();
+        } catch(err) {}

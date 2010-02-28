@@ -28,8 +28,9 @@ end
 
 desc "Generates the hmtl static files to upload to a website"
 task :generate_static_html do
-	parser = YamlParser.new(data_file)
-	transformer = HtmlTransformer.new(parser.read.cv, output_base_dir + '/html')
+	cv = YamlParser.new(data_file).read.cv
+	credentials = YamlParser.new(credentials_file).read.credentials
+	transformer = HtmlTransformer.new(cv, output_base_dir + '/html', credentials)
 	transformer.transform
 end
 
