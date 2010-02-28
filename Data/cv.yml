@@ -14,6 +14,10 @@ cv:
     website : http://blog.jblin.com
     phone   : +1 (418) 558-5165
   
+  country_status : 
+    en : 
+    fr : "Citoyen français, résident permanent canadien."
+  
   summary :
     en : 
       ""
@@ -30,7 +34,10 @@ cv:
       
       
       Possède une approche holistique de la conception des systèmes, et touche à l'ensemble de la réalisation d'un projet,
-      de la phase de conception fonctionnelle jusqu'à la maintenance évolutive et le support, en passant par la conception, la réalisation ainsi que les tests."
+      de la phase de conception fonctionnelle jusqu'à la maintenance évolutive et le support, en passant par la conception, la réalisation ainsi que les tests.
+      
+      
+      Titulaire d'un <a href='http://alma.univ-nantes.fr'>Master en Génie Logiciel (Université de Nantes)</a>, équivalent d'une maîtrise au Québec."
   
   experiences :
 

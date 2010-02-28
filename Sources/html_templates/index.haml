@@ -33,6 +33,9 @@
           %a.url{:href => cv.contact.website}= cv.contact.website
           %br
           %a.value{:href => "tel:#{cv.contact.phone}"}= cv.contact.phone
+          %br
+          %br
+          = cv.country_status.send(lang)
       
       #summary.section
         %h3.subtitle= resources.summary
