@@ -1,5 +1,6 @@
 
 require 'pp'
+require "builder" if Gem.available?('builder')
 
 require 'Sources/yaml_parser'
 require 'Sources/html_transformer'
@@ -14,6 +15,7 @@ namespace :gems do
 	desc "Install the required gem dependencies"
 	task :install do
 		`gem install haml` unless Gem.available?('haml')
+		`gem install builder` unless Gem.available?('builder')
 	end
 
 end
@@ -31,8 +33,27 @@ task :generate_static_html do
 	transformer.transform
 end
 
+desc "Generates sitemap.xml in html output directory - based on html documents."
+task :generate_sitemap do
+  credentials = YamlParser.new(credentials_file).read.credentials
+  
+  puts "Generating #{output_base_dir}/html/sitemap.xml..."
+  
+  sitemap_file = File.open("#{output_base_dir}/html/sitemap.xml", "w+")
+  xml_markup = Builder::XmlMarkup.new(:target => sitemap_file, :indent => 1)
+  xml_markup.instruct! :xml, :version=>"1.0", :encoding=>"UTF-8"
+  xml_markup.urlset :xmlns => "http://www.sitemaps.org/schemas/sitemap/0.9" do |urlset|
+    Dir.glob("#{output_base_dir}/html/*.html").each do |file|
+      urlset.url do |url|
+        url.loc "#{credentials.server_base_url}/#{File.basename(file)}"
+      end
+    end
+  end
+  sitemap_file.close
+end
+
 desc "Upload html output to ftp account."
-task :upload_html do
+task :upload_html => :generate_sitemap do
   credentials = YamlParser.new(credentials_file).read.credentials
   puts "Connecting to #{credentials.username}@#{credentials.server}..."
   ftp = Net::FTP.new
