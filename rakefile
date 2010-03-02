@@ -4,6 +4,7 @@ require "builder" if Gem.available?('builder')
 
 require 'Sources/yaml_parser'
 require 'Sources/html_transformer'
+require 'Sources/odt_transformer'
 require 'net/ftp'
 
 data_file = 'Data/cv.yml'
@@ -14,8 +15,9 @@ namespace :gems do
 
 	desc "Install the required gem dependencies"
 	task :install do
-		`gem install haml` unless Gem.available?('haml')
-		`gem install builder` unless Gem.available?('builder')
+		sh "gem install haml" unless Gem.available?('haml')
+		sh "gem install builder" unless Gem.available?('builder')
+		sh "gem install serenity-odt" unless Gem.available?('serenity-odt')
 	end
 
 end
@@ -31,6 +33,14 @@ task :generate_static_html do
 	cv = YamlParser.new(data_file).read.cv
 	credentials = YamlParser.new(credentials_file).read.credentials
 	transformer = HtmlTransformer.new(cv, output_base_dir + '/html', credentials)
+	transformer.transform
+end
+
+desc "Generates the odt files"
+task :generate_odt do
+	cv = YamlParser.new(data_file).read.cv
+	credentials = YamlParser.new(credentials_file).read.credentials
+	transformer = OdtTransformer.new(cv, output_base_dir + '/odt', credentials)
 	transformer.transform
 end
 
