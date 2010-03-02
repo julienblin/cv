@@ -1,6 +1,15 @@
 
 require 'serenity'
 
+# authorize tags in input...
+module Serenity
+  class StringLine < CodeLine
+    def to_buf
+        " _buf << (" << escape_code(@text) << ").to_s.escape_xml.split(/\n/).join(\"<text:line-break/>\");"
+    end
+  end
+end
+
 require 'Sources/base_transformer'
 require 'Sources/string_additions'
 
