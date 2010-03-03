@@ -30,7 +30,7 @@ class OdtTransformer < BaseTransformer
 		  @lang = lang
 		  @resources = YamlParser.new('Data/resources.yml').read.resources.send(lang)
 		  render_odt 'Sources/odt_templates/template.odt'
-		  FileUtils.mv('Sources/odt_templates/template_output.odt', @output_dir + "/#{@resources.cv}-#{@cv.name}-#{lang}.odt")
+		  FileUtils.mv('Sources/odt_templates/template_output.odt', @output_dir + "/#{@resources.cv}-#{@cv.name}.#{lang}.odt")
 		end
 	end
 	
