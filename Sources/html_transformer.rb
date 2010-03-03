@@ -27,6 +27,7 @@ class HtmlTransformer < BaseTransformer
   		FileUtils.copy('Sources/html_templates/cvstyle.css', @output_dir)
   		FileUtils.copy('Sources/html_templates/.htaccess', @output_dir)
   		FileUtils.copy('Sources/html_templates/robots.txt', @output_dir)
+  		FileUtils.copy('Sources/html_templates/odt.png', @output_dir)
 		end
 	end
 	
