@@ -1,7 +1,8 @@
 require 'Sources/string_additions'
+gem 'serenity-odt', '=0.1.1'
 require 'serenity'
 
-# monkey patch
+# monkey patching to handle links and new lines.
 module Serenity
   class StringLine < CodeLine
     def to_buf

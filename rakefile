@@ -17,7 +17,7 @@ namespace :gems do
 	task :install do
 		sh "gem install haml" unless Gem.available?('haml')
 		sh "gem install builder" unless Gem.available?('builder')
-		sh "gem install serenity-odt" unless Gem.available?('serenity-odt')
+		sh "gem install serenity-odt -v 0.1.1" unless Gem.available?('serenity-odt')
 	end
 
 end
