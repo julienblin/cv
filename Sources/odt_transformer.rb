@@ -1,17 +1,16 @@
-
+require 'Sources/string_additions'
 require 'serenity'
 
-# authorize tags in input...
+# monkey patch
 module Serenity
   class StringLine < CodeLine
     def to_buf
-        " _buf << (" << escape_code(@text) << ").to_s.escape_xml.split(/\n/).join(\"<text:line-break/>\");"
+      " _buf << (" << escape_code(@text) << ").to_s.odt_prevent_links.escape_xml.odt_convert_links_back.split(/\n/).join(\"<text:line-break/>\");"
     end
   end
 end
 
 require 'Sources/base_transformer'
-require 'Sources/string_additions'
 
 class OdtTransformer < BaseTransformer
   include Serenity::Generator
