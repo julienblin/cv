@@ -13,6 +13,18 @@ end
 
 require 'Sources/base_transformer'
 
+class NilClass
+  def to_end_date(res)
+    res.today
+  end
+end
+
+class Date
+  def to_end_date(res)
+    self.strftime(res.date_formatting)
+  end
+end
+
 class OdtTransformer < BaseTransformer
   include Serenity::Generator
 
