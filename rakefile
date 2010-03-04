@@ -5,6 +5,7 @@ require "builder" if Gem.available?('builder')
 require 'Sources/yaml_parser'
 require 'Sources/html_transformer'
 require 'Sources/odt_transformer'
+require 'Sources/pdf_transformer'
 require 'net/ftp'
 
 data_file = 'Data/cv.yml'
@@ -27,6 +28,12 @@ task :generate_odt do
 	cv = YamlParser.new(data_file).read.cv
 	credentials = YamlParser.new(credentials_file).read.credentials
 	transformer = OdtTransformer.new(cv, output_base_dir + '/odt', credentials)
+	transformer.transform
+end
+
+desc "Generates the pdf files from odt"
+task :generate_pdf_from_odt do
+	transformer = PdfTransformer.new(output_base_dir + '/pdf', output_base_dir + '/odt')
 	transformer.transform
 end
 
