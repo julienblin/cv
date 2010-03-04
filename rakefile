@@ -96,7 +96,7 @@ task :upload_html => :generate_sitemap do
     Dir.glob("#{output_base_dir}/html/*", File::FNM_DOTMATCH).each do |file|
       if ((file != "#{output_base_dir}/html/.") and (file != "#{output_base_dir}/html/.."))
         extension = File.extname(file)
-        if((extension == '.png') or (extension == '.odt'))
+        if((extension == '.png') or (extension == '.odt') or (extension == '.pdf'))
           puts "Sending binary file #{file}..."
           ftp.putbinaryfile(file)
         else  
