@@ -55,6 +55,16 @@ task :copy_odt_to_html do
   end
 end
 
+desc "Copy pdf files in html output"
+task :copy_pdf_to_html do
+  cv = YamlParser.new(data_file).read.cv
+  langs = [:en, :fr]
+	langs.each do |lang|
+	  resources = YamlParser.new('Data/resources.yml').read.resources.send(lang)
+    FileUtils.copy("Output/pdf/#{resources.cv}-#{cv.name}.#{lang}.pdf", output_base_dir + '/html')
+  end
+end
+
 desc "Generates sitemap.xml in html output directory - based on html documents."
 task :generate_sitemap do
   credentials = YamlParser.new(credentials_file).read.credentials
@@ -101,4 +111,4 @@ task :upload_html => :generate_sitemap do
   end
 end
 
-task :default => [:generate_odt, :generate_static_html, :copy_odt_to_html]
+task :default => [:generate_odt, :generate_pdf_from_odt, :generate_static_html, :copy_odt_to_html, :copy_pdf_to_html]
