@@ -40,7 +40,21 @@ cv:
       Titulaire d'un <a href='http://alma.univ-nantes.fr'>Master en Génie Logiciel (Université de Nantes)</a>, équivalent d'une maîtrise au Québec."
   
   experiences :
-
+    
+    - location : "<a href='http://www.cgi.com'>CGI</a>"
+      date     :
+        start : 2001-01-25
+      summary  : 
+        en : 
+        fr : 
+          "Conseillé en architecture organique. En plus des mandats, participation à diverses activités internes de la compagnie"
+      tasks    :
+        en :
+        fr :
+          - Participation au recrutement en tant qu'évaluateur technique
+          - Co-direction de la Table des architectes .Net, regroupement des architectes organiques de l'unité d'affaire
+          - Formations et présentations au sein du groupe Pattern & Practices
+    
     - location : "<a href='http://www.cspq.gouv.qc.ca'>Centre de services partagés du Québec</a> (CGI)"
       date     :
         start : 2001-01-25
