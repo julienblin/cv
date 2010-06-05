@@ -43,11 +43,11 @@ cv:
     
     - location : "<a href='http://www.cgi.com'>CGI</a>"
       date     :
-        start : 2001-01-25
+        start : 2008-06-04
       summary  : 
         en : 
         fr : 
-          "Conseillé en architecture organique. En plus des mandats, participation à diverses activités internes de la compagnie"
+          "Conseillé en architecture organique. En plus des mandats, participation à diverses activités internes de la compagnie."
       tasks    :
         en :
         fr :
@@ -57,7 +57,7 @@ cv:
     
     - location : "<a href='http://www.cspq.gouv.qc.ca'>Centre de services partagés du Québec</a> (CGI)"
       date     :
-        start : 2001-01-25
+        start : 2010-01-25
       summary  : 
         en : 
         fr : 
@@ -222,7 +222,7 @@ cv:
   interests :
     -
       en :
-      fr : "<a href='http://www.mondecafes.com'>MondeCafés</a> - Associé, responsable de la conception, réalisation et maintenance du site ainsi que de <a href='http://itunes.apple.com/ca/app/mondecafes/id373073232?mt=8'>l'application iPhone</a> (+ de 11 000 utilisateurs à ce jour)."
+      fr : "<a href='http://www.mondecafes.com'>MondeCafés</a> - Associé, responsable de la conception, réalisation et maintenance du site ainsi que de <a href='http://itunes.apple.com/fr/app/mondecafes/id373073232?mt=8'>l'application iPhone</a> (+ de 11 000 utilisateurs à ce jour)."
     -
       en :
       fr : "Musicien amateur (piano, guitare)"
