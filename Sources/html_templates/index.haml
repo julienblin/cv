@@ -3,7 +3,8 @@
 %html{:xmlns => 'http://www.w3.org/1999/xhtml', 'xml:lang' => 'fr', :lang => 'fr'}
   %head
     %meta{'http-equiv' => 'Content-Type', :content => 'text/xhtml; charset=utf-8'}
-    %link{:rel => 'stylesheet', :href => 'cvstyle.css', :type => 'text/css'}
+    %link{:rel => 'stylesheet', :href => 'cvstyle.css', :type => 'text/css', :media => 'screen'}
+    %link{:rel => 'stylesheet', :href => 'cvstyle.print.css', :type => 'text/css', :media => 'print'}
     %title== #{cv.name} - #{resources.cv}
 
   %body
@@ -13,14 +14,6 @@
           - other_langs.each do |other_lang|
             %li.alternate_lang
               %a{:href => "index.#{other_lang}.html"}= other_lang
-          %li
-            %a{:href => "#{resources.cv}-#{cv.name}.#{lang}.odt"}
-              %img{:src => "odt.png"}
-              odt
-          %li
-            %a{:href => "#{resources.cv}-#{cv.name}.#{lang}.pdf"}
-              %img{:src => "pdf.png"}
-              pdf
     
       #contactinfo.vcard.section
         %h1.fn= cv.name
@@ -39,8 +32,6 @@
           %a.email{:href => "mailto:#{cv.contact.email}"}= cv.contact.email
           %br
           %a.value{:href => "tel:#{cv.contact.phone}"}= cv.contact.phone
-          %br
-          %br
       
       #summary.section
         %h3.subtitle= resources.summary
