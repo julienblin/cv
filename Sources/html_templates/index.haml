@@ -38,12 +38,9 @@
             %span.country-name= cv.contact.address.country
           %a.email{:href => "mailto:#{cv.contact.email}"}= cv.contact.email
           %br
-          %a.url{:href => cv.contact.website}= cv.contact.website
-          %br
           %a.value{:href => "tel:#{cv.contact.phone}"}= cv.contact.phone
           %br
           %br
-          = cv.country_status.send(lang)
       
       #summary.section
         %h3.subtitle= resources.summary

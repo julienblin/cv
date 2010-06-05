@@ -11,13 +11,8 @@ cv:
       zipcode  : G1R 2Z1
       country  : Canada
     email   : julien.blin@gmail.com
-    website : http://blog.jblin.com
     phone   : +1 (418) 558-5165
-  
-  country_status : 
-    en : 
-    fr : "Citoyen français, résident permanent canadien."
-  
+    
   summary :
     en : 
       ""
@@ -33,11 +28,11 @@ cv:
       À l'aise avec le travail en environnement anglophone.
       
       
-      Possède une approche holistique de la conception des systèmes, et touche à l'ensemble de la réalisation d'un projet,
-      de la phase de conception fonctionnelle jusqu'à la maintenance évolutive et le support, en passant par la conception, la réalisation ainsi que les tests.
+      Possède une approche holistique de la conception des systèmes et connaît l'ensemble de la réalisation d'un projet,
+      de la phase de conception fonctionnelle jusqu'à la maintenance évolutive et le support, en passant par la réalisation ainsi que les tests.
       
       
-      Titulaire d'un <a href='http://alma.univ-nantes.fr'>Master en Génie Logiciel (Université de Nantes)</a>, équivalent d'une maîtrise au Québec."
+      Titulaire d'un <a href='http://alma.univ-nantes.fr'>Master en Génie Logiciel (Université de Nantes, France)</a>, équivalent d'une maîtrise au Québec."
   
   experiences :
     
@@ -47,13 +42,13 @@ cv:
       summary  : 
         en : 
         fr : 
-          "Conseillé en architecture organique. En plus des mandats, participation à diverses activités internes de la compagnie."
+          "Conseiller en architecture organique. En plus des mandats, participation à diverses activités internes de la compagnie."
       tasks    :
         en :
         fr :
           - Participation au recrutement en tant qu'évaluateur technique
-          - Co-direction de la Table des architectes .Net, regroupement des architectes organiques de l'unité d'affaire
-          - Formations et présentations au sein du groupe Pattern & Practices
+          - Co-direction de la Table des architectes .Net (regroupement des architectes organiques de l'unité d'affaire)
+          - Formations et présentations au sein du groupe Pattern and Practices
     
     - location : "<a href='http://www.cspq.gouv.qc.ca'>Centre de services partagés du Québec</a> (CGI)"
       date     :
@@ -67,7 +62,7 @@ cv:
       tasks    :
         en :
         fr :
-          - "Rédaction de dossiers de positionnement pour les besoins de développement internes"
+          - "Rédaction de dossiers de positionnement pour les besoins de développement interne"
           - "Validation des propositions d'architecture logicielle des clients en fonction des critères de performance, de sécurité et de bonnes pratiques générales"
 
     - location : "<a href='http://www.cirquedusoleil.com'>Cirque du Soleil</a> (CGI)"
@@ -101,7 +96,7 @@ cv:
       tasks    :
         en :
         fr :
-          - Participation au recrutement des développeurs juniors, en tant que conseillé technique
+          - Participation au recrutement des développeurs juniors, en tant que conseiller technique
           - Participation à la structure de conseil interne .Net destinée à supporter l'ensemble des missions de l'unité d'affaire
           - Parrainage de développeurs juniors, aide au développement de carrière
         
@@ -171,24 +166,6 @@ cv:
           "Chargé d'équipe sur un projet de tests fonctionnels lors de la refonte de l'application principale de gestion.
           
           6 personnes sur un an pour un projet de 2 000 j.p."
-        
-    - location : "<a href='http://www.saur.com'>SAUR France</a>"
-      date     :
-        start : 2004-07-01
-        end : 2004-12-31
-      summary  : 
-        en : 
-        fr : 
-          "Développeur d'une application interne de gestion des demandes (~ 200 j.p.)."
-          
-    - location : "<a href='http://www.insee.fr'>Institut National de la Statistique et des Études Économiques</a>"
-      date     :
-        start : 2001-04-02
-        end : 2001-06-30
-      summary  : 
-        en : 
-        fr : 
-          "Développeur d'une application interne de traitement des mises à jour du fichier électoral (~ 100 j.p.)."
 
   skills :
     - 
@@ -222,7 +199,7 @@ cv:
   interests :
     -
       en :
-      fr : "<a href='http://www.mondecafes.com'>MondeCafés</a> - Associé, responsable de la conception, réalisation et maintenance du site ainsi que de <a href='http://itunes.apple.com/fr/app/mondecafes/id373073232?mt=8'>l'application iPhone</a> (+ de 11 000 utilisateurs à ce jour)."
+      fr : "<a href='http://www.mondecafes.com'>MondeCafés</a> - Associé, responsable de la conception, réalisation et maintenance du site ainsi que de <a href='http://itunes.apple.com/fr/app/mondecafes/id373073232?mt=8'>l'application iPhone</a> (+ de 11 000 utilisateurs à ce jour)"
     -
       en :
       fr : "Musicien amateur (piano, guitare)"
