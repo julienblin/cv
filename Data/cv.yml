@@ -75,7 +75,22 @@ cv:
           - "Gestion des environnements (développement, test, production, etc.)"
           - Mise en place de mécanismes de graduation automatisés
           - "Environnement technologique Microsoft : .Net, COM+, SqlServer, Windows, Biztalk, MOSS"
-          
+    
+    - location : "<a href='http://www.logica.com'>Logica</a>"
+      date     :
+        start : 2005-09-01
+        end : 2008-04-30
+      summary  : 
+        en : 
+        fr : 
+          "Consultant en architecture logicielle. En plus des missions de consultation, implication dans la vie de la société."
+      tasks    :
+        en :
+        fr :
+          - Participation au recrutement des développeurs juniors, en tant que conseillé technique
+          - Participation à la structure de conseil interne .Net destinée à supporter l'ensemble des missions de l'unité d'affaire
+          - Parrainage de développeurs juniors, aide au développement de carrière
+        
     - location : "<a href='http://www.axa.fr'>AXA France</a> (Logica)"
       date     :
         start : 2008-01-01
