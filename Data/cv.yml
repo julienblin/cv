@@ -15,7 +15,22 @@ cv:
     
   summary :
     en : 
-      ""
+      "5 years of experience as a software architect, working for international companies
+      (<a href='http://www.logica.fr/'>Logica</a> and <a href='http://www.cgi.com/'>CGI</a>).
+      
+      
+      Dynamic, pragmatic, good customer relationship, trustworthy.
+      
+      Leadership abilities, experienced in team management.
+      
+      Can work in english or french.
+      
+      
+      Approaches system conception with a holistic view and knows the entirety of a project realisation steps, from
+      functional conception to maintenance and support, through realisation and tests.
+      
+      Owns a <a href='http://alma.univ-nantes.fr'>Master in software engineering (Université de Nantes, France)</a>."
+      
     fr : 
       "5 années d'expérience en tant qu'architecte au sein de sociétés de consultation internationales
       (<a href='http://www.logica.fr/'>Logica</a> et <a href='http://www.cgi.com/'>CGI</a>).
@@ -41,10 +56,14 @@ cv:
         start : 2008-06-04
       summary  : 
         en : 
+          "Software architect consultant. Besides the typical missions, participated in lots of internal activities."
         fr : 
           "Conseiller en architecture organique. En plus des mandats, participation à diverses activités internes de la compagnie."
       tasks    :
         en :
+          - Participated in recruitment activities as a technical advisor
+          - Co-leaded the .Net architects table (board of software architects in the business unit)
+          - Taught and presented to the Pattern and Practices group
         fr :
           - Participation au recrutement en tant qu'évaluateur technique
           - Co-direction de la Table des architectes .Net (regroupement des architectes organiques de l'unité d'affaire)
@@ -55,12 +74,17 @@ cv:
         start : 2010-01-25
       summary  : 
         en : 
+          "Software architect in an enterprise team of software architects.
+          
+          Responsible for evaluating and validating software proposals submitted by CSPQ customers."
         fr : 
           "Architecte logiciel au sein d'une équipe d'architectes organiques.
           
           Chargé d'évaluer et de valider les besoins organiques des clients du CSPQ."
       tasks    :
         en :
+          - "Wrote positioning documents for internal development needs"
+          - "Validated software proposals submitted by customers, focusing on performance and security issues, as well as good general practice"
         fr :
           - "Rédaction de dossiers de positionnement pour les besoins de développement interne"
           - "Validation des propositions d'architecture logicielle des clients en fonction des critères de performance, de sécurité et de bonnes pratiques générales"
@@ -71,6 +95,9 @@ cv:
         end : 2010-01-20
       summary  : 
         en : 
+          "Software architect for a team of 20 responsible for the maintenance and evolution of Cirque du Soleil's line of business applications (~ 150 applications).
+          
+          Outsourcing contract for 10 years and 40,000 man-days."
         fr : 
           "Architecte logiciel pour une équipe d'une vingtaine de personnes chargée de la maintenance et des évolutions
           du parc applicatif du Cirque du Soleil (~ 150 applications).
@@ -78,6 +105,11 @@ cv:
           Contrat d'impartition de 10 ans et 40 000 j.p."
       tasks    :
         en :
+          - Changed the maintenance process by injecting industrialization techniques
+          - Reorganized work methodology used by developers on evolutions
+          - "Environments management (development, test, production, etc.)"
+          - Introduced an automatic graduation process
+          - "Microsoft environment : .Net, COM+, SqlSderver, Windows, Biztalk, MOSS"
         fr :
           - Industrialisation du processus de maintenance applicative sur les applications critiques
           - Réorganisation de la méthodologie de travail sur les évolutions
@@ -91,10 +123,14 @@ cv:
         end : 2008-04-30
       summary  : 
         en : 
+          "Software architect consultant. Besides the typical missions, participated in lots of internal activities."
         fr : 
           "Consultant en architecture logicielle. En plus des missions de consultation, implication dans la vie de la société."
       tasks    :
         en :
+          - Participated in recruitment activities as a technical advisor
+          - Involved in the internal .Net board, which was designed to support all the missions in the business unit
+          - Mentorship of junior developers
         fr :
           - Participation au recrutement des développeurs juniors, en tant que conseiller technique
           - Participation à la structure de conseil interne .Net destinée à supporter l'ensemble des missions de l'unité d'affaire
