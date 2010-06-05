@@ -29,6 +29,7 @@ cv:
       Approaches system conception with a holistic view and knows the entirety of a project realisation steps, from
       functional conception to maintenance and support, through realisation and tests.
       
+      
       Owns a <a href='http://alma.univ-nantes.fr'>Master in software engineering (Université de Nantes, France)</a>."
       
     fr : 
@@ -109,13 +110,11 @@ cv:
           - Reorganized work methodology used by developers on evolutions
           - "Environments management (development, test, production, etc.)"
           - Introduced an automatic graduation process
-          - "Microsoft environment : .Net, COM+, SqlSderver, Windows, Biztalk, MOSS"
         fr :
           - Industrialisation du processus de maintenance applicative sur les applications critiques
           - Réorganisation de la méthodologie de travail sur les évolutions
           - "Gestion des environnements (développement, test, production, etc.)"
           - Mise en place de mécanismes de graduation automatisés
-          - "Environnement technologique Microsoft : .Net, COM+, SqlServer, Windows, Biztalk, MOSS"
     
     - location : "<a href='http://www.logica.com'>Logica</a>"
       date     :
@@ -142,6 +141,9 @@ cv:
         end : 2008-04-30
       summary  : 
         en : 
+          "Software architect responsible for the conception of an extranet meant to be used by a life insurrance distribution network.
+          
+          Creation of a web UI connected to an MVS mainframe. Estimation : 1,500 man-days."
         fr : 
           "Architecte logiciel responsable de la conception d’un extranet à destination du réseau des distributeurs en assurance-vie.
           
@@ -150,6 +152,9 @@ cv:
           Projet estimé lors de la phase de démarrage à 1 500 j.p."
       tasks    :
         en :
+          - Evaluated the complexity of the application
+          - Responsible for the start and approbation of the project
+          - Introduced Agile methodology in a CMMI level 2 environment
         fr :
           - Participation à l'évaluation du niveau de complexité de l'application
           - Entière responsabilité des activités de démarrage du projet
@@ -163,14 +168,25 @@ cv:
         end : 2007-12-31
       summary  : 
         en : 
+          "Software architect - Rewrite of 4 line of business client-server applications from more than 1,000,000 lines of VB5 code to C#/.Net 2.0.
+          
+          The applications were connected to a BEA Tuxedo back-end and shared a common framework.
+          
+          Team of 5 - around 4,000 man-days."
         fr : 
           "Architecte logiciel - Réécriture de 4 applications de gestion en client riche de VB5 (plus d'un million de lignes de code) vers C#/.Net 2.0.
           
           Ces 4 applications se connectent sur un back-end BEA Tuxedo et partagent un ensemble de fonctionnalités communes.
           
-          Équipe de 15 personnes et 4000 j.p."
+          Équipe de 15 personnes et 4 000 j.p."
       tasks    :
         en :
+          - Conceived system and applications architecture
+          - Participated in team recruitment in collaboration with the project manager
+          - Taught and supported the development team
+          - Wrote development norms
+          - Developped Visual Basic code analysis tools to help with the migration process
+          - Defined the workflow and work environment for the development team
         fr :
           - Réalisation de l'architecture du système et des applications en collaboration et sous la validation des architectes organiques du client
           - "Participation, en collaboration avec le chargé de projet, à la constitution de l'équipe"
@@ -185,6 +201,11 @@ cv:
         end : 2006-08-31
       summary  : 
         en : 
+          "Software architect and project manager responsible for the creation of the <a href='http://epargneentreprise.axa.fr'>http://epargneentreprise.axa.fr</a> website.
+          
+          400 man-days and 3 people in charge of conception and realisation of the website that was part of a major project (more than 50,000 man-days).
+          
+          The website used CMS technologies (<a href='http://www.interwoven.com/components/pagenext.jsp?topic=PRODUCT::TEAMSITE'>TeamSite</a>)."
         fr : 
           "Architecte logiciel et chargé de projet - Réalisation du site <a href='http://epargneentreprise.axa.fr'>http://epargneentreprise.axa.fr</a>.
           
@@ -198,6 +219,9 @@ cv:
         end : 2005-08-31
       summary  : 
         en : 
+          "Team leader for a project that consisted in functionaly testing a major application.
+          
+          Team of 6 for a 2,000 man-days project."
         fr : 
           "Chargé d'équipe sur un projet de tests fonctionnels lors de la refonte de l'application principale de gestion.
           
@@ -234,11 +258,11 @@ cv:
   
   interests :
     -
-      en :
+      en : "<a href='http://www.mondecafes.com'>MondeCafés</a> - Associate, technical director, responsible for conception, realisation and maintenance of the websites and the <a href='http://itunes.apple.com/fr/app/mondecafes/id373073232?mt=8'>iPhone application</a> (more than 11,000 users to this day)"
       fr : "<a href='http://www.mondecafes.com'>MondeCafés</a> - Associé, responsable de la conception, réalisation et maintenance du site ainsi que de <a href='http://itunes.apple.com/fr/app/mondecafes/id373073232?mt=8'>l'application iPhone</a> (+ de 11 000 utilisateurs à ce jour)"
     -
-      en :
+      en : "Amateur musician (piano, guitar)"
       fr : "Musicien amateur (piano, guitare)"
     -
-      en :
+      en : "Traveler"
       fr : "Voyageur"
