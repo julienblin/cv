@@ -4,7 +4,7 @@ body { color: #333 !important; font-size: 10pt; line-height:140%; background: wh
 a { color: #333; text-decoration: none; font-weight: normal; }
   a:hover { border-bottom:1px dotted #666; color:#666; }
 abbr, acronym, .help { text-decoration: none; border: 0; }
-h1 { font-size: 26pt; text-align: center; margin: 0; padding: 0.2in 0 0.1in; border-top: 0.1in solid #999; letter-spacing:3pt; font-variant: small-caps; }
+h1 { font-size: 26pt; text-align: center; margin: 0; padding: 0.2in 0 0.1in; border-top: 0.1in solid #999; font-variant: small-caps; }
 h2 { font-size: 12pt; text-align: center; font-style:italic; margin:0 0 0.3in; padding:0; color:#666; }
 h3 { font-size: 13pt; text-align: left; margin: 0; padding: 0; }
 h3.location a { font-size: 13pt; text-align: left; margin: 0; padding: 0; font-weight: bold; }
@@ -38,7 +38,7 @@ img { border: 0;}
 
 #contactinfo { padding: 0.05in 0.15in 0.15in 0.15in; }
 #actions { float: right; padding-right: 0.15in;}
-#actions li { list-style: none; display: inline; }
+#actions li { list-style: none; display: inline; margin-left: 0.1in; }
 #actions a { border-bottom: 1px dotted rgb(102, 102, 102); }
 
 #tool { text-align: center; ; font-size: 9pt}

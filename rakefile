@@ -4,7 +4,6 @@ require "builder" if Gem.available?('builder')
 
 require 'Sources/yaml_parser'
 require 'Sources/html_transformer'
-require 'Sources/odt_transformer'
 require 'Sources/pdf_transformer'
 require 'net/ftp'
 
@@ -18,23 +17,8 @@ namespace :gems do
 	task :install do
 		sh "gem install haml" unless Gem.available?('haml')
 		sh "gem install builder" unless Gem.available?('builder')
-		sh "gem install serenity-odt -v 0.1.1" unless Gem.available?('serenity-odt')
 	end
 
-end
-
-desc "Generates the odt files"
-task :generate_odt do
-	cv = YamlParser.new(data_file).read.cv
-	credentials = YamlParser.new(credentials_file).read.credentials
-	transformer = OdtTransformer.new(cv, output_base_dir + '/odt', credentials)
-	transformer.transform
-end
-
-desc "Generates the pdf files from odt"
-task :generate_pdf_from_odt do
-	transformer = PdfTransformer.new(output_base_dir + '/pdf', output_base_dir + '/odt')
-	transformer.transform
 end
 
 desc "Generates the hmtl static files to upload to a website"
@@ -45,14 +29,11 @@ task :generate_static_html do
 	transformer.transform
 end
 
-desc "Copy odt files in html output"
-task :copy_odt_to_html do
+desc "Generates the pdf files from odt"
+task :generate_pdf do
   cv = YamlParser.new(data_file).read.cv
-  langs = [:en, :fr]
-	langs.each do |lang|
-	  resources = YamlParser.new('Data/resources.yml').read.resources.send(lang)
-    FileUtils.copy("Output/odt/#{resources.cv}-#{cv.name}.#{lang}.odt", output_base_dir + '/html')
-  end
+	transformer = PdfTransformer.new(cv, output_base_dir + '/pdf', output_base_dir + '/html')
+	transformer.transform
 end
 
 desc "Copy pdf files in html output"
@@ -67,6 +48,8 @@ end
 
 desc "Generates sitemap.xml in html output directory - based on html documents."
 task :generate_sitemap do
+  require 'cgi'
+  
   credentials = YamlParser.new(credentials_file).read.credentials
 
   puts "Generating #{output_base_dir}/html/sitemap.xml..."
@@ -77,7 +60,12 @@ task :generate_sitemap do
   xml_markup.urlset :xmlns => "http://www.sitemaps.org/schemas/sitemap/0.9" do |urlset|
     Dir.glob("#{output_base_dir}/html/*.html").each do |file|
       urlset.url do |url|
-        url.loc "#{credentials.server_base_url}/#{File.basename(file)}"
+        url.loc "#{credentials.server_base_url}/#{CGI::escape(File.basename(file))}"
+      end
+    end
+    Dir.glob("#{output_base_dir}/html/*.pdf").each do |file|
+      urlset.url do |url|
+        url.loc "#{credentials.server_base_url}/#{CGI::escape(File.basename(file))}"
       end
     end
   end
@@ -111,4 +99,7 @@ task :upload_html => :generate_sitemap do
   end
 end
 
-task :default => [:generate_static_html]
+task :generate => [:generate_static_html, :generate_pdf, :copy_pdf_to_html]
+task :publish => [:upload_html]
+
+task :default => [:generate]

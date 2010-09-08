@@ -14,6 +14,11 @@
           - other_langs.each do |other_lang|
             %li.alternate_lang
               %a{:href => "index.#{other_lang}.html"}= other_lang
+          
+          %li
+            %a{:href => "#{resources.cv}-#{cv.name}.#{lang}.pdf"}
+              %img{:src => "pdf.png"}
+              pdf
     
       #contactinfo.vcard.section
         %h1.fn= cv.name
