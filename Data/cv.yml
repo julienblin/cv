@@ -69,10 +69,29 @@ cv:
           - Participation au recrutement en tant qu'évaluateur technique
           - Co-direction de la Table des architectes .Net (regroupement des architectes organiques de l'unité d'affaire)
           - Formations et présentations au sein du groupe Pattern and Practices
+          
+    - location : "<a href='http://www.inalco.com'>Industrielle Alliance</a> (CGI)"
+      date     :
+        start : 2010-01-16
+      summary  : 
+        en : 
+          "Software architect for the extranet team.
+          
+          Major rewriting of the corporate extranet using <a href='http://www.oracle.com/us/products/middleware/user-interaction/059302.html'>Oracle WebCenter Interaction</a> (formerly known as <a href='http://en.wikipedia.org/wiki/Plumtree_Software'>Plumtree</a>)."
+        fr : 
+          "Architecte logiciel au sein de l'équipe de l'extranet.
+          
+          Réécriture majeure du portail extranet utilisant <a href='http://www.oracle.com/us/products/middleware/user-interaction/059302.html'>Oracle WebCenter Interaction</a> (anciennement connu sous le nom de <a href='http://en.wikipedia.org/wiki/Plumtree_Software'>Plumtree</a>)."
+      tasks    :
+        en :
+          - "Evaluated technological and financial aspects of the integration of different line of business applications into the portal."
+        fr :
+          - "Évaluation technologique et bugétaire de l'intégration des applications des différentes lignes d'affaires au sein du portail."
     
     - location : "<a href='http://www.cspq.gouv.qc.ca'>Centre de services partagés du Québec</a> (CGI)"
       date     :
         start : 2010-01-25
+        end : 2010-08-13
       summary  : 
         en : 
           "Software architect in an enterprise team of software architects.
