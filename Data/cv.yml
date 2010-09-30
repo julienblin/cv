@@ -256,7 +256,7 @@ cv:
     - 
       en : Security
       fr : Sécurité
-    - ".Net (C#)"
+    - ".Net (C#, VB)"
     - "<a href='http://rubyonrails.org/'>Ruby on Rails</a>"
     - "Objective-C (iPhone)"
     - HTML
