@@ -1,5 +1,7 @@
-.left-col {
-  border-right: 1px solid #ccc;
+@media (min-width:992px) {
+	.left-col {
+	  border-right: 1px solid #ccc;
+	}
 }
 
 .flush-top {
